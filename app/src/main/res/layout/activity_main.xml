@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="#302D2D"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/stopwatch"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="34sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="277dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:onClick="btnStartClick"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:onClick="btnStopClick"/>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:onClick="btnResetClick"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/close"
+        android:layout_marginTop="15dp"
+        android:onClick="btnCloseClick"/>
+</LinearLayout>
